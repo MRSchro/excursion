@@ -1,20 +1,72 @@
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
+
+/* 0 ▸ Global ------------------------------------------------------- */
+html, body {
   margin: 0;
   padding: 0;
+  background: #000;        /* black */
+  color: #fff;                /* default white text */
+  font-family: Verdana;
+  text-align: center;
 }
 
+/* 1 ▸ Links -------------------------------------------------------- */
+.download-link {
+  color: aquamarine;          /* #7fffd4 */
+  font-size: 12px;
+  display: inline-block;
+  margin: 10px 0 40px;
+  text-decoration: undedrline;
+}
+
+/* 2 ▸ Headings ----------------------------------------------------- */
+h1 {
+  font-size: 20px;
+  font-weight: 400;           /* “normal” weight */
+  margin: 40px 0 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 300;           /* light weight */
+  margin: 60px 0 10px;
+}
+
+/* 3 ▸ Supporting copy -------------------------------------------- */
+.tagline,
+.support {
+  font-size: 12px;
+  color: #c0c0c0;             /* light gray */
+  margin: 20px 10px;
+}
+
+/* 4 ▸ Video -------------------------------------------------------- */
 video {
-  width: 100%;
+  width: 40vw;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  background: #000;           /* keeps black frame if video smaller */
+}
+
+/* 5 ▸ Images ------------------------------------------------------- */
+.landscape {
+  width: 70%;
+  max-width: 600px;
   height: auto;
 }
 
-a {
-  color: #00bfff;
-  text-decoration: none;
+.icon {
+  width: 5%;                /* small phone icon */
+  height: auto;
+  margin: 40px auto;
+  display: block;
 }
 
-h1, h2 { margin: 40px 0 20px; }
-
-p img { width: 60%; max-width: 600px; }
+/* 6 ▸ Footer ------------------------------------------------------- */
+footer {
+  font-size: 14px;
+  color: #c0c0c0;
+  text-align: right;
+  margin: 80px 20px 40px;
+}
